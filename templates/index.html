@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Online SQL Editor</title>
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+<body>
+    <div class="theme-select-container">
+        <label for="theme-select">Select Theme:</label>
+        <select id="theme-select" class="theme-select">
+            <option value="theme-blue">Blue Theme</option>
+            <option value="theme-red">Red Theme</option>
+            <option value="theme-green">Green Theme</option>
+            <option value="theme-purple">Purple Theme</option>
+            <option value="theme-dark">Dark Theme</option>
+        </select>
+    </div>
+
+    <div class="container">
+        <div class="logo"><img src="../images/logo.jpeg" alt=""></div>
+        <h1 class="Headline">SQL Editor</h1>
+        <div class="tables-list">
+            <h2>Available Tables</h2>
+            <ul id="tables">
+                <!-- Dynamic table list -->
+            </ul>
+        </div>
+        <textarea class="sql-editor" id="sql-editor"></textarea>
+        <button class="button" id="execute-button">Execute</button>
+        <div class="result" id="result"></div>
+    </div>
+
+    <script src="../static/script.js"></script>
+</body>
+</html>
